@@ -54,7 +54,6 @@ ax.add_collection(sc)
 cc = mc.PatchCollection(circles, match_original=True)
 ax.add_collection(cc)
 for text in texts:
-    print(text[0], text[1], text[-1])
     ax.text(text[0], text[1], str(text[-1]))
 ax.set_aspect('equal')
 ax.axis('off')
